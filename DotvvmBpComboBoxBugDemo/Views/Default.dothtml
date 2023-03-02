@@ -1,0 +1,17 @@
+﻿@viewModel DotvvmBpComboBoxBugDemo.ViewModels.DefaultViewModel, DotvvmBpComboBoxBugDemo
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="content">
+
+        <img src="/Resources/Images/tree.svg" class="content__background-image content__background-image--left" />
+
+        <bp:ComboBox DataSource="{value: ComboBoxItems}"
+                     ItemKeyBinding="{value: Id}"
+                     ItemTextBinding="{value: Label}"
+                     SelectedValue="{value: SelectedItem}">
+        </bp:ComboBox>
+           
+        Selected item ID: {{value: SelectedItem.Id}}
+    </div>
+</dot:Content>
