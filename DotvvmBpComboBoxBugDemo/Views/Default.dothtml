@@ -10,6 +10,12 @@
                      ItemKeyBinding="{value: Id}"
                      ItemTextBinding="{value: Label}"
                      SelectedValue="{value: SelectedItem}">
+            <ItemTemplate>
+                <div>
+                    <div><b>{{value: Label}}</b></div>
+                    <div>{{value: Detail}}</div>
+                </div>
+            </ItemTemplate>
         </bp:ComboBox>
            
         Selected item ID: {{value: SelectedItem.Id}}
